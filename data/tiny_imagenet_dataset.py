@@ -6,10 +6,8 @@ import torchvision.transforms as transforms
 
 class TinyImageNetDataset(Dataset):
     """
-    A PyTorch Dataset class for the Tiny ImageNet dataset.
-    
-    EDITED: This version is simplified for Stage 1 VQGAN training.
-    It does *not* load or return class labels, only the images.
+    A PyTorch Dataset class for the Tiny ImageNet dataset
+    simplified for Stage 1 VQGAN training.
     """
     def __init__(self, root_dir, split='train', size=64, random_flip=True):
         """

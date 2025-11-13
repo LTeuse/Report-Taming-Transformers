@@ -1,5 +1,5 @@
 """
-This is a stand-alone implementation of the Patch-Based Discriminator (D)
+This is an implementation of the Patch-Based Discriminator (D)
 used in the VQGAN paper ("Taming Transformers").
 
 This module is designed to be imported into the main training script.

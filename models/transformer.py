@@ -100,7 +100,6 @@ class AutoregressiveTransformer(nn.Module):
         x = self.dropout(x)
         
         # 4. Pass through Transformer blocks
-        # --- THIS IS THE FIX ---
         # Slice the pre-computed mask to match the input sequence length T
         mask = self.causal_mask[:T, :T]
         for block in self.blocks:
